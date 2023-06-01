@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+    <title>News Letter Signup</title>
+</head>
+<body class="bg-[#242742] font-['Roboto'] ">
+    <div class="flex m-auto my-[5%] bg-white w-[60%] rounded-md p-6 items-center max-sm:w-[100%] max-sm:flex-col-reverse max-sm:h-[100vh] max-sm:m-0 max-sm:rounded-none max-sm:p-0">
+        <div class="p-10">
+            <div>
+                <h1 class="text-[38px] mb-4 font-bold text-[#36384e]">Stay updated</h1>
+                <p class="text-sm text-[#36384e] font-bold">Join 60,000+ product managers receiving monthly</br>updates on:</p>
+                <ul class="my-4 text-[#36384e] text-[14px] font-bold ">
+                    <li class="flex text-left mb-2" ><img src="./images/icon-list.svg" class="mr-2"> Product discovery and building what matters</li>
+                    <li class="flex text-left mb-2" ><img src="./images/icon-list.svg" class="mr-2"> Measuring to ensure updates are a success</li>
+                    <li class="flex text-left mb-2" ><img src="./images/icon-list.svg" class="mr-2"> And much more!</li>
+                </ul>
+            </div>
+            <div class="mt-10">
+                <div class="flex justify-between mb-3">
+                    <h4 class="text-[12px] text-[#36384e] font-bold">Email address</h4>
+                    <h4 id="error" class="text-[12px] text-[#ff6257] hidden">valid email required</h4>
+                </div>
+                <input type="email" placeholder="email@company.com" id="email" class="border-[#9294a0] border-2 rounded-md w-full p-2 ">
+                <button id="btn" class="bg-[#242742] text-white w-full text-[16px] rounded-md p-3 hover:bg-gradient-to-r from-[#FF5868] to-[#FF693C] my-4">Subscribe to monthly newsletter</button>
+            </div>
+        </div>
+        <div class="bg-[url('/images/illustration-sign-up-desktop.svg')]  h-[75vh] w-[50%] bg-cover bg-center rounded-md hover:rounded-none max-sm:bg-[url('/images/illustration-sign-up-mobile.svg')] max-sm:w-[100%] max-sm:rounded-t-none">
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
